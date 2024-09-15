@@ -1,0 +1,21 @@
+syntax = "proto2";
+package advbench;
+
+message Prompt {
+    optional string input = 1;
+    optional string output_first_line = 2;
+    repeated string outputs = 3;
+    optional string universal_perturbation = 4;
+    repeated string propagation_perturbations = 5;
+    optional string prompt_guard_perturbation = 6;
+    optional string gcg_regular_perturbation = 7;
+    optional string prompt_guard_and_propagation_perturbation = 8;
+}
+
+message Dataset {
+    repeated Prompt samples=1;
+}
+
+message PerturbationsTracker {
+    repeated string perturbations = 1;
+}

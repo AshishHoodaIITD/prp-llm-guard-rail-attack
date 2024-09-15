@@ -1,0 +1,19 @@
+{
+    "model_dir": "models",
+    "models": ["vicuna_33b"],
+    "dataset": "data/wizard_100tokens.json",
+    "results": "results/vicuna_33b_universal_adversarial_prefix.json",
+    "dataset_start_idx": 0,
+    "dataset_end_idx": 20,
+    "solver": {
+        "num_steps": 500,
+        "num_perturbation_candidates": 512,
+        "topk": 256,
+        "forward_batch_size": 16,
+        "plateau": 20,
+        "log_interval": 5,
+        "success_fn": "full_match_success_fn",
+        "alphanumeric_perturbation": false,
+        "perturbation_init_length": 20
+    }
+}
