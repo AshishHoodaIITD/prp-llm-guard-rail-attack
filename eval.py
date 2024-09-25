@@ -13,8 +13,6 @@ from pprint import pprint
 import random
 import json
 import argparse 
-import google.generativeai as genai
-import openai
 import time
 import pickle
 from google.protobuf import json_format

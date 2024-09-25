@@ -6,11 +6,11 @@ Code for the ACL 2024 paper: PRP: Propagating Universal Perturbations to Attack 
 
 ## Setup
 ### Installation
-To run PRP, you can clone this repository and install the package using pip. To install the package, run the following commands:
+To run PRP, you can clone this repository and install the package using conda. To install the package, run the following commands:
 ```bash
 $ git clone https://github.com/AshishHoodaIITD/prp-llm-guard-rail-attack.git
 $ cd prp-llm-guard-rail-attack
-$ pip install -e .
+$ conda env create -f environment.yml
 ```
 
 ### Download Models
